@@ -1,0 +1,149 @@
+#search-products {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-products h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #007782;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search label {
+  font-weight: bold;
+  color: #333;
+}
+
+.searchBar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.search input[type="submit"] {
+  padding: 10px;
+  background-color: #007782;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search input[type="submit"]:hover {
+  background-color: #005f64;
+}
+
+#results-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  width: 91%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.infoContainer {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.infoContainer strong {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #007782;
+}
+
+.infoContainer p {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.saveForm {
+  padding: 10px 15px 15px;
+  text-align: right;
+}
+
+.saveForm button {
+  padding: 8px 12px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+  margin-top: 6px;
+}
+
+.saveForm button:hover {
+  background-color: #00796b;
+}
+
+#results-products p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.1em;
+  color: #888;
+}
+
+.box-recensioni {
+  border: 2px solid #007782;
+  padding: 20px;
+  border-radius: 12px;
+  background: #e0f7f8;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.link-recensioni {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007782;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.link-recensioni:hover {
+  background-color: #005e66;
+}
+

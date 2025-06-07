@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #007782 0%, #004e55 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 5px #003d40;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.main_left {
+    flex: 1;
+    background: url('header.png') center/cover no-repeat;
+    border-radius: 20px;
+    min-height: 600px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.main_right {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    color: #003d40;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-out;
+    max-width: 480px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #007782;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: block;
+    color: #003d40;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    border: 2px solid #007782;
+    border-radius: 10px;
+    transition: 0.3s;
+    outline: none;
+    background-color: #f8fafa;
+    color: #003d40;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #004e55;
+    box-shadow: 0 0 5px rgba(0, 119, 130, 0.6);
+}
+
+.names {
+    display: flex;
+    gap: 1rem;
+}
+
+.name, .surname {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.username, .email, .password, .confirm_password {
+    display: flex;
+    flex-direction: column;
+}
+
+.allow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    color: #003d40;
+}
+
+.allow label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.errorj {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #ffd2d2;
+    color: #a70000;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    animation: slideIn 0.5s ease-in;
+}
+
+.errorj img {
+    width: 16px;
+    height: 16px;
+}
+
+form div > div {
+    display: none;
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    color: #a70000;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+form div > div img {
+    width: 14px;
+    height: 14px;
+}
+
+.errorj div, .errorj span {
+    display: flex !important;
+}
+
+.error input, .error input:focus {
+    border: 2px solid #d9534f;
+    outline: none;
+    background-color: #fff0f0;
+    color: #a70000;
+}
+
+.allow.error label {
+    color: #d9534f;
+    font-weight: 600;
+}
+
+.submit input, input[type=submit] {
+    background: #007782;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit input:hover, input[type=submit]:hover {
+    background-color: #005f66;
+}
+
+.signup {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #003d40;
+}
+
+.signup a {
+    color: #007782;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main_left {
+        display: none;
+    }
+
+    .main_right {
+        width: 100%;
+        border-radius: 0;
+        padding: 2rem 1rem;
+        box-shadow: none;
+    }
+}

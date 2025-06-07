@@ -1,0 +1,132 @@
+.profile-section {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding: 137px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.username {
+  font-size: 24px;
+  margin: 0;
+}
+
+.no-reviews {
+  color: gray;
+  margin: 4px 0 12px 0;
+}
+
+.info {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.info p {
+  margin: 4px 0;
+}
+
+.edit-profile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #007782;
+  margin-top: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.tabs .active {
+  color: #007782;
+  border-bottom: 3px solid #007782;
+}
+
+.announcement-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #f7fafa;
+  border: 1px solid #dbe9eb;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.icon-circle {
+  background-color: #dbe9eb;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.saved-product-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.saved-product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.saved-product-card .infoContainer {
+  padding: 10px;
+}

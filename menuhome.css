@@ -1,0 +1,65 @@
+#logo{
+    font-family: 'Freestyle Script', cursive;
+    font-size: 33px;
+}
+
+#logo a{
+    color: #008489;
+    text-decoration: none;
+    font-family: 'Freestyle Script', cursive;
+    font-size: 33px;
+}
+
+#logo a:visited,
+#logo a:hover,
+#logo a:active,
+#logo a:focus{
+    color: #008489;
+    text-decoration: none;
+}
+
+#collegamento-menu {
+  position: absolute;
+  top: 54%;
+  left: 64%;
+  background-color: white;
+  z-index: 15;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 180px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #007782;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item a:hover {
+  background-color: rgb(224, 241, 242);
+  border-radius: 5px;
+}
+
+.hidden{ 
+  display: none;  
+}
+
+.button-profilo{
+  font-size: 14px;
+  color:#007782; 
+  padding: 8px 15px;
+  border: 1px solid #007782;
+  border-radius: 7px;
+}
+
+.button-profilo:hover{
+  background-color: rgb(224, 241, 242);
+  color: #007782;
+}
